@@ -2,14 +2,32 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px 10px;
+    margin-bottom: 20px;
 
     .input-filter-cards {
         padding: 15px 20px;
         text-align: center;
         font-size: 1rem;
-        min-width: 250px;
+        width: 100%;
+        max-width: 610px;
         border: none;
         border-radius: 5px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
+
+    .input-filter-cards:focus {
+        outline: solid 2px dodgerblue;
+        font-style: italic;
+        
+    }
+}
+
+
+
+@media screen and (max-width: 647px) {
+    .input-filter-cards {
+        width: 100%;
+        max-width: 300px;
+    }   
 }

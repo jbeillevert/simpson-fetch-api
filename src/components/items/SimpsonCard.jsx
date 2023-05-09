@@ -1,9 +1,15 @@
-function SimpsonCard() {
+import { NavLink } from "react-router-dom";
+
+
+function SimpsonCard({ name, img }) {
+
+    const navname = name.replace(' ', '-').toLowerCase();
+
     return (
-        <div className="simpson-card">
-            <h3 className="h3-simpson-card">Apu</h3>
-            <img className="img-simpson-card" src="https://cdn.glitch.me/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FApuNahasapeemapetilon.png" alt="" />
-        </div>
+        <li className="simpson-card">
+                <h3 className="h3-simpson-card">{name}</h3>
+                <img className="img-simpson-card" src={img} />
+        </li>
     )
 }
 

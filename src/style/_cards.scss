@@ -1,4 +1,8 @@
 .cards {
-    background-color: dodgerblue;
-    height: 500px;
+    padding: 0px 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
